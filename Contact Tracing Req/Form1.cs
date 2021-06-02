@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Contact_Tracing_Req
 {
-    public partial class Form1 : Form
+    public partial class frmContactTracing : Form
     {
-        public Form1()
+        public frmContactTracing()
         {
             InitializeComponent();
         }

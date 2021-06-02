@@ -1,7 +1,7 @@
 ﻿
 namespace Contact_Tracing_Req
 {
-    partial class Form1
+    partial class frmContactTracing
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,13 +29,116 @@ namespace Contact_Tracing_Req
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmContactTracing));
+            this.txtbxName = new System.Windows.Forms.TextBox();
+            this.lblName = new System.Windows.Forms.Label();
+            this.lblAge = new System.Windows.Forms.Label();
+            this.txtbxAge = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtbxEmail = new System.Windows.Forms.TextBox();
+            this.lblPhone = new System.Windows.Forms.Label();
+            this.txtbxPhone = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
+            // 
+            // txtbxName
+            // 
+            this.txtbxName.Location = new System.Drawing.Point(79, 81);
+            this.txtbxName.Name = "txtbxName";
+            this.txtbxName.Size = new System.Drawing.Size(125, 27);
+            this.txtbxName.TabIndex = 0;
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.Location = new System.Drawing.Point(12, 84);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(49, 20);
+            this.lblName.TabIndex = 1;
+            this.lblName.Text = "Name\r\n";
+            this.lblName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lblAge
+            // 
+            this.lblAge.AutoSize = true;
+            this.lblAge.Location = new System.Drawing.Point(12, 137);
+            this.lblAge.Name = "lblAge";
+            this.lblAge.Size = new System.Drawing.Size(36, 20);
+            this.lblAge.TabIndex = 2;
+            this.lblAge.Text = "Age";
+            this.lblAge.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtbxAge
+            // 
+            this.txtbxAge.Location = new System.Drawing.Point(79, 134);
+            this.txtbxAge.Name = "txtbxAge";
+            this.txtbxAge.Size = new System.Drawing.Size(49, 27);
+            this.txtbxAge.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 187);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(62, 40);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "E-mail \r\nAddress";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtbxEmail
+            // 
+            this.txtbxEmail.Location = new System.Drawing.Point(79, 194);
+            this.txtbxEmail.Name = "txtbxEmail";
+            this.txtbxEmail.Size = new System.Drawing.Size(125, 27);
+            this.txtbxEmail.TabIndex = 5;
+            // 
+            // lblPhone
+            // 
+            this.lblPhone.AutoSize = true;
+            this.lblPhone.Location = new System.Drawing.Point(12, 254);
+            this.lblPhone.Name = "lblPhone";
+            this.lblPhone.Size = new System.Drawing.Size(63, 40);
+            this.lblPhone.TabIndex = 6;
+            this.lblPhone.Text = "Phone\r\nNumber";
+            this.lblPhone.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtbxPhone
+            // 
+            this.txtbxPhone.Location = new System.Drawing.Point(79, 260);
+            this.txtbxPhone.Name = "txtbxPhone";
+            this.txtbxPhone.Size = new System.Drawing.Size(125, 27);
+            this.txtbxPhone.TabIndex = 7;
+            // 
+            // frmContactTracing
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Controls.Add(this.txtbxPhone);
+            this.Controls.Add(this.lblPhone);
+            this.Controls.Add(this.txtbxEmail);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtbxAge);
+            this.Controls.Add(this.lblAge);
+            this.Controls.Add(this.lblName);
+            this.Controls.Add(this.txtbxName);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "frmContactTracing";
+            this.Text = "Contact Tracing Form";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.TextBox txtbxName;
+        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.Label lblAge;
+        private System.Windows.Forms.TextBox txtbxAge;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtbxEmail;
+        private System.Windows.Forms.Label lblPhone;
+        private System.Windows.Forms.TextBox txtbxPhone;
     }
 }
 
