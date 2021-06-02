@@ -17,5 +17,14 @@ namespace Contact_Tracing_Req
             InitializeComponent();
         }
 
+        private void lblPhone_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

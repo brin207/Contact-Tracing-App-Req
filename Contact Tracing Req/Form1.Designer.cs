@@ -38,6 +38,10 @@ namespace Contact_Tracing_Req
             this.txtbxEmail = new System.Windows.Forms.TextBox();
             this.lblPhone = new System.Windows.Forms.Label();
             this.txtbxPhone = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtbxAddress = new System.Windows.Forms.TextBox();
+            this.Date = new System.Windows.Forms.Label();
+            this.dttmpckr = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // txtbxName
@@ -100,6 +104,7 @@ namespace Contact_Tracing_Req
             this.lblPhone.TabIndex = 6;
             this.lblPhone.Text = "Phone\r\nNumber";
             this.lblPhone.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblPhone.Click += new System.EventHandler(this.lblPhone_Click);
             // 
             // txtbxPhone
             // 
@@ -108,11 +113,51 @@ namespace Contact_Tracing_Req
             this.txtbxPhone.Size = new System.Drawing.Size(125, 27);
             this.txtbxPhone.TabIndex = 7;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 324);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(62, 20);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Address";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtbxAddress
+            // 
+            this.txtbxAddress.Location = new System.Drawing.Point(81, 321);
+            this.txtbxAddress.Name = "txtbxAddress";
+            this.txtbxAddress.Size = new System.Drawing.Size(125, 27);
+            this.txtbxAddress.TabIndex = 9;
+            // 
+            // Date
+            // 
+            this.Date.AutoSize = true;
+            this.Date.Location = new System.Drawing.Point(12, 383);
+            this.Date.Name = "Date";
+            this.Date.Size = new System.Drawing.Size(41, 20);
+            this.Date.TabIndex = 10;
+            this.Date.Text = "Date";
+            this.Date.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // dttmpckr
+            // 
+            this.dttmpckr.Location = new System.Drawing.Point(81, 376);
+            this.dttmpckr.Name = "dttmpckr";
+            this.dttmpckr.Size = new System.Drawing.Size(250, 27);
+            this.dttmpckr.TabIndex = 12;
+            this.dttmpckr.Value = new System.DateTime(2021, 6, 2, 18, 27, 51, 0);
+            this.dttmpckr.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
             // frmContactTracing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dttmpckr);
+            this.Controls.Add(this.Date);
+            this.Controls.Add(this.txtbxAddress);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.txtbxPhone);
             this.Controls.Add(this.lblPhone);
             this.Controls.Add(this.txtbxEmail);
@@ -139,6 +184,10 @@ namespace Contact_Tracing_Req
         private System.Windows.Forms.TextBox txtbxEmail;
         private System.Windows.Forms.Label lblPhone;
         private System.Windows.Forms.TextBox txtbxPhone;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtbxAddress;
+        private System.Windows.Forms.Label Date;
+        private System.Windows.Forms.DateTimePicker dttmpckr;
     }
 }
 
