@@ -51,30 +51,34 @@ namespace Contact_Tracing_Req
             this.dttmpckrTimeO = new System.Windows.Forms.DateTimePicker();
             this.grpbxDate = new System.Windows.Forms.GroupBox();
             this.grpbxContact = new System.Windows.Forms.GroupBox();
+            this.lblResidd = new System.Windows.Forms.Label();
             this.grpbxPersonal = new System.Windows.Forms.GroupBox();
+            this.lblTempd = new System.Windows.Forms.Label();
+            this.lblNamed = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblTitle2 = new System.Windows.Forms.Label();
             this.lblDesc = new System.Windows.Forms.Label();
             this.btnSubmit = new System.Windows.Forms.Button();
-            this.lblNamed = new System.Windows.Forms.Label();
-            this.lblTempd = new System.Windows.Forms.Label();
-            this.lblResidd = new System.Windows.Forms.Label();
+            this.lblWarn = new System.Windows.Forms.Label();
+            this.pnl1 = new System.Windows.Forms.Panel();
             this.grpbxDate.SuspendLayout();
             this.grpbxContact.SuspendLayout();
             this.grpbxPersonal.SuspendLayout();
+            this.pnl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtbxName
             // 
-            this.txtbxName.Location = new System.Drawing.Point(73, 43);
+            this.txtbxName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtbxName.Location = new System.Drawing.Point(97, 46);
             this.txtbxName.Name = "txtbxName";
-            this.txtbxName.Size = new System.Drawing.Size(246, 27);
+            this.txtbxName.Size = new System.Drawing.Size(246, 20);
             this.txtbxName.TabIndex = 0;
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(6, 46);
+            this.lblName.Location = new System.Drawing.Point(30, 49);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(49, 20);
             this.lblName.TabIndex = 1;
@@ -84,7 +88,7 @@ namespace Contact_Tracing_Req
             // lblAge
             // 
             this.lblAge.AutoSize = true;
-            this.lblAge.Location = new System.Drawing.Point(6, 106);
+            this.lblAge.Location = new System.Drawing.Point(30, 109);
             this.lblAge.Name = "lblAge";
             this.lblAge.Size = new System.Drawing.Size(36, 20);
             this.lblAge.TabIndex = 2;
@@ -93,9 +97,10 @@ namespace Contact_Tracing_Req
             // 
             // txtbxAge
             // 
-            this.txtbxAge.Location = new System.Drawing.Point(73, 102);
+            this.txtbxAge.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtbxAge.Location = new System.Drawing.Point(97, 105);
             this.txtbxAge.Name = "txtbxAge";
-            this.txtbxAge.Size = new System.Drawing.Size(66, 27);
+            this.txtbxAge.Size = new System.Drawing.Size(66, 20);
             this.txtbxAge.TabIndex = 3;
             this.txtbxAge.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -111,9 +116,10 @@ namespace Contact_Tracing_Req
             // 
             // txtbxEmail
             // 
+            this.txtbxEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtbxEmail.Location = new System.Drawing.Point(136, 46);
             this.txtbxEmail.Name = "txtbxEmail";
-            this.txtbxEmail.Size = new System.Drawing.Size(188, 27);
+            this.txtbxEmail.Size = new System.Drawing.Size(188, 20);
             this.txtbxEmail.TabIndex = 5;
             // 
             // lblPhone
@@ -129,9 +135,11 @@ namespace Contact_Tracing_Req
             // 
             // txtbxPhone
             // 
+            this.txtbxPhone.BackColor = System.Drawing.SystemColors.Window;
+            this.txtbxPhone.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtbxPhone.Location = new System.Drawing.Point(136, 103);
             this.txtbxPhone.Name = "txtbxPhone";
-            this.txtbxPhone.Size = new System.Drawing.Size(188, 27);
+            this.txtbxPhone.Size = new System.Drawing.Size(188, 20);
             this.txtbxPhone.TabIndex = 7;
             // 
             // lblResidence
@@ -146,6 +154,7 @@ namespace Contact_Tracing_Req
             // 
             // txtbxAddress
             // 
+            this.txtbxAddress.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtbxAddress.Location = new System.Drawing.Point(138, 155);
             this.txtbxAddress.Multiline = true;
             this.txtbxAddress.Name = "txtbxAddress";
@@ -166,15 +175,16 @@ namespace Contact_Tracing_Req
             // 
             // txtbxSex
             // 
-            this.txtbxSex.Location = new System.Drawing.Point(73, 152);
+            this.txtbxSex.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtbxSex.Location = new System.Drawing.Point(97, 155);
             this.txtbxSex.Name = "txtbxSex";
-            this.txtbxSex.Size = new System.Drawing.Size(144, 27);
+            this.txtbxSex.Size = new System.Drawing.Size(144, 20);
             this.txtbxSex.TabIndex = 13;
             // 
             // lblSex
             // 
             this.lblSex.AutoSize = true;
-            this.lblSex.Location = new System.Drawing.Point(6, 158);
+            this.lblSex.Location = new System.Drawing.Point(30, 161);
             this.lblSex.Name = "lblSex";
             this.lblSex.Size = new System.Drawing.Size(32, 20);
             this.lblSex.TabIndex = 14;
@@ -184,7 +194,7 @@ namespace Contact_Tracing_Req
             // lblTemp
             // 
             this.lblTemp.AutoSize = true;
-            this.lblTemp.Location = new System.Drawing.Point(153, 106);
+            this.lblTemp.Location = new System.Drawing.Point(177, 109);
             this.lblTemp.Name = "lblTemp";
             this.lblTemp.Size = new System.Drawing.Size(93, 20);
             this.lblTemp.TabIndex = 15;
@@ -193,9 +203,10 @@ namespace Contact_Tracing_Req
             // 
             // txtbxTemp
             // 
-            this.txtbxTemp.Location = new System.Drawing.Point(252, 102);
+            this.txtbxTemp.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtbxTemp.Location = new System.Drawing.Point(276, 105);
             this.txtbxTemp.Name = "txtbxTemp";
-            this.txtbxTemp.Size = new System.Drawing.Size(67, 27);
+            this.txtbxTemp.Size = new System.Drawing.Size(67, 20);
             this.txtbxTemp.TabIndex = 16;
             this.txtbxTemp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -252,7 +263,7 @@ namespace Contact_Tracing_Req
             this.grpbxDate.Controls.Add(this.dttmpckrTimeO);
             this.grpbxDate.Controls.Add(this.lblTimeI);
             this.grpbxDate.Controls.Add(this.dttmpckrTimeI);
-            this.grpbxDate.Location = new System.Drawing.Point(68, 412);
+            this.grpbxDate.Location = new System.Drawing.Point(67, 238);
             this.grpbxDate.Name = "grpbxDate";
             this.grpbxDate.Size = new System.Drawing.Size(271, 160);
             this.grpbxDate.TabIndex = 21;
@@ -268,12 +279,22 @@ namespace Contact_Tracing_Req
             this.grpbxContact.Controls.Add(this.txtbxAddress);
             this.grpbxContact.Controls.Add(this.lblPhone);
             this.grpbxContact.Controls.Add(this.lblResidence);
-            this.grpbxContact.Location = new System.Drawing.Point(400, 196);
+            this.grpbxContact.Location = new System.Drawing.Point(398, 22);
             this.grpbxContact.Name = "grpbxContact";
             this.grpbxContact.Size = new System.Drawing.Size(365, 333);
             this.grpbxContact.TabIndex = 22;
             this.grpbxContact.TabStop = false;
             this.grpbxContact.Text = "Contact Info.";
+            // 
+            // lblResidd
+            // 
+            this.lblResidd.AutoSize = true;
+            this.lblResidd.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.lblResidd.Location = new System.Drawing.Point(33, 175);
+            this.lblResidd.Name = "lblResidd";
+            this.lblResidd.Size = new System.Drawing.Size(81, 75);
+            this.lblResidd.TabIndex = 18;
+            this.lblResidd.Text = "(Bldg, Street,\r\nBarangay, \r\nCity, Province,\r\nRegion, \r\nPostal Code)";
             // 
             // grpbxPersonal
             // 
@@ -287,12 +308,32 @@ namespace Contact_Tracing_Req
             this.grpbxPersonal.Controls.Add(this.lblTemp);
             this.grpbxPersonal.Controls.Add(this.txtbxSex);
             this.grpbxPersonal.Controls.Add(this.lblSex);
-            this.grpbxPersonal.Location = new System.Drawing.Point(32, 196);
+            this.grpbxPersonal.Location = new System.Drawing.Point(9, 22);
             this.grpbxPersonal.Name = "grpbxPersonal";
-            this.grpbxPersonal.Size = new System.Drawing.Size(343, 210);
+            this.grpbxPersonal.Size = new System.Drawing.Size(371, 210);
             this.grpbxPersonal.TabIndex = 23;
             this.grpbxPersonal.TabStop = false;
             this.grpbxPersonal.Text = "Personal Info.";
+            // 
+            // lblTempd
+            // 
+            this.lblTempd.AutoSize = true;
+            this.lblTempd.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.lblTempd.Location = new System.Drawing.Point(288, 135);
+            this.lblTempd.Name = "lblTempd";
+            this.lblTempd.Size = new System.Drawing.Size(41, 15);
+            this.lblTempd.TabIndex = 18;
+            this.lblTempd.Text = "(in °C)";
+            // 
+            // lblNamed
+            // 
+            this.lblNamed.AutoSize = true;
+            this.lblNamed.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.lblNamed.Location = new System.Drawing.Point(97, 74);
+            this.lblNamed.Name = "lblNamed";
+            this.lblNamed.Size = new System.Drawing.Size(157, 15);
+            this.lblNamed.TabIndex = 17;
+            this.lblNamed.Text = "(Last Name, First Name M.I.)";
             // 
             // lblTitle
             // 
@@ -329,7 +370,7 @@ namespace Contact_Tracing_Req
             // 
             // btnSubmit
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(517, 549);
+            this.btnSubmit.Location = new System.Drawing.Point(597, 375);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(124, 41);
             this.btnSubmit.TabIndex = 27;
@@ -337,58 +378,54 @@ namespace Contact_Tracing_Req
             this.btnSubmit.UseVisualStyleBackColor = true;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
-            // lblNamed
+            // lblWarn
             // 
-            this.lblNamed.AutoSize = true;
-            this.lblNamed.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.lblNamed.Location = new System.Drawing.Point(73, 71);
-            this.lblNamed.Name = "lblNamed";
-            this.lblNamed.Size = new System.Drawing.Size(168, 17);
-            this.lblNamed.TabIndex = 17;
-            this.lblNamed.Text = "(Last Name, First Name M.I.)";
+            this.lblWarn.AutoSize = true;
+            this.lblWarn.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.lblWarn.ForeColor = System.Drawing.Color.Red;
+            this.lblWarn.Location = new System.Drawing.Point(408, 375);
+            this.lblWarn.Name = "lblWarn";
+            this.lblWarn.Size = new System.Drawing.Size(174, 34);
+            this.lblWarn.TabIndex = 28;
+            this.lblWarn.Text = "*Supply all the boxes with the \r\nneeded information.";
+            this.lblWarn.Visible = false;
+            this.lblWarn.Click += new System.EventHandler(this.lblWarn_Click);
             // 
-            // lblTempd
+            // pnl1
             // 
-            this.lblTempd.AutoSize = true;
-            this.lblTempd.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.lblTempd.Location = new System.Drawing.Point(264, 132);
-            this.lblTempd.Name = "lblTempd";
-            this.lblTempd.Size = new System.Drawing.Size(43, 17);
-            this.lblTempd.TabIndex = 18;
-            this.lblTempd.Text = "(in °C)";
-            // 
-            // lblResidd
-            // 
-            this.lblResidd.AutoSize = true;
-            this.lblResidd.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.lblResidd.Location = new System.Drawing.Point(33, 175);
-            this.lblResidd.Name = "lblResidd";
-            this.lblResidd.Size = new System.Drawing.Size(86, 85);
-            this.lblResidd.TabIndex = 18;
-            this.lblResidd.Text = "(Bldg, Street,\r\nBarangay, \r\nCity, Province,\r\nRegion, \r\nPostal Code)";
+            this.pnl1.Controls.Add(this.btnSubmit);
+            this.pnl1.Controls.Add(this.lblWarn);
+            this.pnl1.Controls.Add(this.grpbxContact);
+            this.pnl1.Controls.Add(this.grpbxDate);
+            this.pnl1.Controls.Add(this.grpbxPersonal);
+            this.pnl1.Location = new System.Drawing.Point(3, 184);
+            this.pnl1.Name = "pnl1";
+            this.pnl1.Size = new System.Drawing.Size(785, 433);
+            this.pnl1.TabIndex = 29;
             // 
             // frmContactTracing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(800, 619);
-            this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.lblDesc);
             this.Controls.Add(this.lblTitle2);
             this.Controls.Add(this.lblTitle);
-            this.Controls.Add(this.grpbxPersonal);
-            this.Controls.Add(this.grpbxContact);
-            this.Controls.Add(this.grpbxDate);
+            this.Controls.Add(this.pnl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmContactTracing";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Contact Tracing Form";
+            this.Load += new System.EventHandler(this.frmContactTracing_Load);
             this.grpbxDate.ResumeLayout(false);
             this.grpbxDate.PerformLayout();
             this.grpbxContact.ResumeLayout(false);
             this.grpbxContact.PerformLayout();
             this.grpbxPersonal.ResumeLayout(false);
             this.grpbxPersonal.PerformLayout();
+            this.pnl1.ResumeLayout(false);
+            this.pnl1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -425,6 +462,8 @@ namespace Contact_Tracing_Req
         private System.Windows.Forms.Label lblResidd;
         private System.Windows.Forms.Label lblTempd;
         private System.Windows.Forms.Label lblNamed;
+        private System.Windows.Forms.Label lblWarn;
+        private System.Windows.Forms.Panel pnl1;
     }
 }
 

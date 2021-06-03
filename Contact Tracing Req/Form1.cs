@@ -13,6 +13,7 @@ namespace Contact_Tracing_Req
 {
     public partial class frmContactTracing : Form
     {
+       
         public frmContactTracing()
         {
             InitializeComponent();
@@ -40,26 +41,114 @@ namespace Contact_Tracing_Req
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-
-            if (txtbxName.Text == "" && txtbxAge.Text == "" && txtbxSex.Text == "" && txtbxTemp.Text == "" && txtbxEmail.Text == "" && txtbxPhone.Text == "" && txtbxAddress.Text == "")
+            bool na = false;
+            //txtbxName.BackColor = txtbxAge.BackColor = txtbxSex.BackColor = txtbxTemp.BackColor = txtbxEmail.BackColor = txtbxPhone.BackColor = txtbxAddress.BackColor = Color.FromArgb(225, 192, 192);
+            //txtbxName.Text == "" && txtbxAge.Text == "" && txtbxSex.Text == "" && txtbxTemp.Text == "" && txtbxEmail.Text == "" && txtbxPhone.Text == "" && txtbxAddress.Text == ""
+            foreach(Control ctrl in grpbxPersonal.Controls)
             {
+                if (ctrl is TextBox)
+                {
 
-                txtbxName.Text == txtbxAge.Text == txtbxSex.Text == txtbxTemp.Text == txtbxEmail.Text == txtbxPhone.Text == txtbxAddress.Bo == Color.Red;
+                    if (ctrl.Text == "")
+                    {
+
+                        ctrl.BackColor = Color.FromArgb(225, 192, 192);
+                        na = true;
+                        lblWarn.Visible = true;
+                    }
+                    else if(ctrl.Text != "")
+                    {
+
+                        ctrl.BackColor = Color.White;
+                    }
+                }
             }
-            StreamWriter outptFile;
-            outptFile = File.AppendText("Data.txt");
-            outptFile.WriteLine("=====");
-            outptFile.WriteLine(txtbxName.Text);
-            outptFile.WriteLine(txtbxAge.Text);
-            outptFile.WriteLine(txtbxSex.Text);
-            outptFile.WriteLine(txtbxTemp.Text);
-            outptFile.WriteLine(txtbxEmail.Text);
-            outptFile.WriteLine(txtbxPhone.Text);
-            outptFile.WriteLine(txtbxAddress.Text);
-            outptFile.WriteLine(dttmpckrDate.Value);
-            outptFile.WriteLine(dttmpckrTimeI.Value);
-            outptFile.WriteLine(dttmpckrTimeO.Value);
-            outptFile.Close();
+
+            foreach (Control ctrl in grpbxContact.Controls)
+            {
+                if (ctrl is TextBox)
+                {
+
+                    if (ctrl.Text == "")
+                    {
+
+                        ctrl.BackColor = Color.FromArgb(225, 192, 192);
+                        na = true;
+                        lblWarn.Visible = true;
+                    }
+                    else if (ctrl.Text != "")
+                    {
+
+                        ctrl.BackColor = Color.White;
+                    }
+                }
+            }
+
+            if (na == false)
+            {
+                lblWarn.Visible = false;
+                DialogResult result = MessageBox.Show("Are you sure you want to submit?", "Submit", MessageBoxButtons.YesNo);
+
+                if (result == DialogResult.Yes)
+                {
+
+                    StreamWriter outptFile;
+                    outptFile = File.AppendText("Data.txt");
+                    outptFile.WriteLine("=====");
+                    outptFile.WriteLine(txtbxName.Text);
+                    outptFile.WriteLine(txtbxAge.Text);
+                    outptFile.WriteLine(txtbxSex.Text);
+                    outptFile.WriteLine(txtbxTemp.Text);
+                    outptFile.WriteLine(txtbxEmail.Text);
+                    outptFile.WriteLine(txtbxPhone.Text);
+                    outptFile.WriteLine(txtbxAddress.Text);
+                    outptFile.WriteLine(dttmpckrDate.Value);
+                    outptFile.WriteLine(dttmpckrTimeI.Value);
+                    outptFile.WriteLine(dttmpckrTimeO.Value);
+                    outptFile.Close();
+                    DialogResult result1 = MessageBox.Show("Your response is submitted. Thank You!\nDo you want to submit another form?", "Thank You!", MessageBoxButtons.YesNo);
+
+                    if (result1 == DialogResult.Yes)
+                    {
+
+                        txtbxName.Text = txtbxAge.Text = txtbxSex.Text = txtbxTemp.Text = txtbxEmail.Text = txtbxPhone.Text = txtbxAddress.Text = "";
+                    }
+                    else if (result1 == DialogResult.No)
+                    {
+
+                        System.Windows.Forms.Application.Exit();
+                    }
+                }
+                else if (result == DialogResult.No)
+                {
+
+                    //None
+                }
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+         
+        }
+
+        private void frmContactTracing_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblWarn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
