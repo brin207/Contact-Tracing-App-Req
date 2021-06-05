@@ -70,7 +70,7 @@ namespace Contact_Tracing_Req
             // txtbxName
             // 
             this.txtbxName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtbxName.Location = new System.Drawing.Point(97, 46);
+            this.txtbxName.Location = new System.Drawing.Point(92, 49);
             this.txtbxName.Name = "txtbxName";
             this.txtbxName.Size = new System.Drawing.Size(246, 20);
             this.txtbxName.TabIndex = 0;
@@ -98,7 +98,7 @@ namespace Contact_Tracing_Req
             // txtbxAge
             // 
             this.txtbxAge.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtbxAge.Location = new System.Drawing.Point(97, 105);
+            this.txtbxAge.Location = new System.Drawing.Point(94, 109);
             this.txtbxAge.Name = "txtbxAge";
             this.txtbxAge.Size = new System.Drawing.Size(66, 20);
             this.txtbxAge.TabIndex = 3;
@@ -164,7 +164,7 @@ namespace Contact_Tracing_Req
             // dttmpckrDate
             // 
             this.dttmpckrDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dttmpckrDate.Location = new System.Drawing.Point(47, 26);
+            this.dttmpckrDate.Location = new System.Drawing.Point(71, 26);
             this.dttmpckrDate.MaxDate = new System.DateTime(2100, 12, 31, 0, 0, 0, 0);
             this.dttmpckrDate.MinDate = new System.DateTime(2021, 1, 1, 0, 0, 0, 0);
             this.dttmpckrDate.Name = "dttmpckrDate";
@@ -176,7 +176,7 @@ namespace Contact_Tracing_Req
             // txtbxSex
             // 
             this.txtbxSex.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtbxSex.Location = new System.Drawing.Point(97, 155);
+            this.txtbxSex.Location = new System.Drawing.Point(97, 161);
             this.txtbxSex.Name = "txtbxSex";
             this.txtbxSex.Size = new System.Drawing.Size(144, 20);
             this.txtbxSex.TabIndex = 13;
@@ -204,7 +204,7 @@ namespace Contact_Tracing_Req
             // txtbxTemp
             // 
             this.txtbxTemp.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtbxTemp.Location = new System.Drawing.Point(276, 105);
+            this.txtbxTemp.Location = new System.Drawing.Point(276, 109);
             this.txtbxTemp.Name = "txtbxTemp";
             this.txtbxTemp.Size = new System.Drawing.Size(67, 20);
             this.txtbxTemp.TabIndex = 16;
@@ -234,25 +234,28 @@ namespace Contact_Tracing_Req
             // 
             // dttmpckrTimeI
             // 
+            this.dttmpckrTimeI.CustomFormat = "";
             this.dttmpckrTimeI.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dttmpckrTimeI.Location = new System.Drawing.Point(108, 75);
+            this.dttmpckrTimeI.Location = new System.Drawing.Point(108, 73);
             this.dttmpckrTimeI.MaxDate = new System.DateTime(2100, 12, 31, 0, 0, 0, 0);
             this.dttmpckrTimeI.MinDate = new System.DateTime(2021, 1, 1, 0, 0, 0, 0);
             this.dttmpckrTimeI.Name = "dttmpckrTimeI";
             this.dttmpckrTimeI.ShowUpDown = true;
-            this.dttmpckrTimeI.Size = new System.Drawing.Size(125, 27);
+            this.dttmpckrTimeI.Size = new System.Drawing.Size(111, 27);
             this.dttmpckrTimeI.TabIndex = 19;
-            this.dttmpckrTimeI.Value = new System.DateTime(2021, 6, 3, 14, 15, 20, 0);
+            this.dttmpckrTimeI.Value = new System.DateTime(2021, 6, 5, 14, 15, 0, 0);
+            this.dttmpckrTimeI.ValueChanged += new System.EventHandler(this.dttmpckrTimeI_ValueChanged);
             // 
             // dttmpckrTimeO
             // 
+            this.dttmpckrTimeO.CustomFormat = "";
             this.dttmpckrTimeO.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dttmpckrTimeO.Location = new System.Drawing.Point(108, 108);
             this.dttmpckrTimeO.MaxDate = new System.DateTime(2100, 12, 31, 0, 0, 0, 0);
             this.dttmpckrTimeO.MinDate = new System.DateTime(2021, 1, 1, 0, 0, 0, 0);
             this.dttmpckrTimeO.Name = "dttmpckrTimeO";
             this.dttmpckrTimeO.ShowUpDown = true;
-            this.dttmpckrTimeO.Size = new System.Drawing.Size(125, 27);
+            this.dttmpckrTimeO.Size = new System.Drawing.Size(111, 27);
             this.dttmpckrTimeO.TabIndex = 20;
             this.dttmpckrTimeO.Value = new System.DateTime(2021, 6, 3, 0, 0, 0, 0);
             // 
@@ -319,7 +322,7 @@ namespace Contact_Tracing_Req
             // 
             this.lblTempd.AutoSize = true;
             this.lblTempd.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.lblTempd.Location = new System.Drawing.Point(288, 135);
+            this.lblTempd.Location = new System.Drawing.Point(288, 132);
             this.lblTempd.Name = "lblTempd";
             this.lblTempd.Size = new System.Drawing.Size(41, 15);
             this.lblTempd.TabIndex = 18;
@@ -329,7 +332,7 @@ namespace Contact_Tracing_Req
             // 
             this.lblNamed.AutoSize = true;
             this.lblNamed.Font = new System.Drawing.Font("Segoe UI", 7.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.lblNamed.Location = new System.Drawing.Point(97, 74);
+            this.lblNamed.Location = new System.Drawing.Point(90, 72);
             this.lblNamed.Name = "lblNamed";
             this.lblNamed.Size = new System.Drawing.Size(157, 15);
             this.lblNamed.TabIndex = 17;
@@ -398,7 +401,7 @@ namespace Contact_Tracing_Req
             this.pnl1.Controls.Add(this.grpbxContact);
             this.pnl1.Controls.Add(this.grpbxDate);
             this.pnl1.Controls.Add(this.grpbxPersonal);
-            this.pnl1.Location = new System.Drawing.Point(3, 184);
+            this.pnl1.Location = new System.Drawing.Point(12, 174);
             this.pnl1.Name = "pnl1";
             this.pnl1.Size = new System.Drawing.Size(785, 433);
             this.pnl1.TabIndex = 29;
@@ -408,7 +411,7 @@ namespace Contact_Tracing_Req
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(800, 619);
+            this.ClientSize = new System.Drawing.Size(818, 619);
             this.Controls.Add(this.lblDesc);
             this.Controls.Add(this.lblTitle2);
             this.Controls.Add(this.lblTitle);

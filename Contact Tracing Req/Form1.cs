@@ -103,8 +103,8 @@ namespace Contact_Tracing_Req
                     outptFile.WriteLine(txtbxPhone.Text);
                     outptFile.WriteLine(txtbxAddress.Text);
                     outptFile.WriteLine(dttmpckrDate.Value);
-                    outptFile.WriteLine(dttmpckrTimeI.Value);
-                    outptFile.WriteLine(dttmpckrTimeO.Value);
+                    outptFile.WriteLine(dttmpckrTimeI.Value.ToString("HH:mm"));
+                    outptFile.WriteLine(dttmpckrTimeO.Value.ToString("HH:mm"));
                     outptFile.Close();
                     DialogResult result1 = MessageBox.Show("Your response is submitted. Thank You!\nDo you want to submit another form?", "Thank You!", MessageBoxButtons.YesNo);
 
@@ -147,6 +147,11 @@ namespace Contact_Tracing_Req
         }
 
         private void lblWarn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dttmpckrTimeI_ValueChanged(object sender, EventArgs e)
         {
 
         }
