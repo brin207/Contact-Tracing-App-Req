@@ -8,12 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Windows.Forms;
-
 namespace Contact_Tracing_Req
 {
     public partial class frmContactTracing : Form
     {
-       
         public frmContactTracing()
         {
             InitializeComponent();
@@ -84,35 +82,6 @@ namespace Contact_Tracing_Req
                     }
                 }
             }
-
-
-
-
-
-
-
-
-
-
-
-
-
-         
-        }
-
-        private void frmContactTracing_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblWarn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dttmpckrTimeI_ValueChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

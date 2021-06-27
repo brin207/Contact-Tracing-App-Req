@@ -240,7 +240,6 @@ namespace Contact_Tracing_Req
             this.dttmpckrTimeI.Size = new System.Drawing.Size(111, 27);
             this.dttmpckrTimeI.TabIndex = 19;
             this.dttmpckrTimeI.Value = new System.DateTime(2021, 6, 5, 14, 15, 0, 0);
-            this.dttmpckrTimeI.ValueChanged += new System.EventHandler(this.dttmpckrTimeI_ValueChanged);
             // 
             // dttmpckrTimeO
             // 
@@ -388,7 +387,6 @@ namespace Contact_Tracing_Req
             this.lblWarn.TabIndex = 28;
             this.lblWarn.Text = "*Supply all the boxes with the \r\nneeded information.";
             this.lblWarn.Visible = false;
-            this.lblWarn.Click += new System.EventHandler(this.lblWarn_Click);
             // 
             // pnl1
             // 
@@ -416,7 +414,6 @@ namespace Contact_Tracing_Req
             this.Name = "frmContactTracing";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Contact Tracing Form";
-            this.Load += new System.EventHandler(this.frmContactTracing_Load);
             this.grpbxDate.ResumeLayout(false);
             this.grpbxDate.PerformLayout();
             this.grpbxContact.ResumeLayout(false);
