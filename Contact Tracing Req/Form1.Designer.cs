@@ -131,7 +131,6 @@ namespace Contact_Tracing_Req
             this.lblPhone.TabIndex = 6;
             this.lblPhone.Text = "Phone\r\nNumber";
             this.lblPhone.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lblPhone.Click += new System.EventHandler(this.lblPhone_Click);
             // 
             // txtbxPhone
             // 
@@ -171,7 +170,6 @@ namespace Contact_Tracing_Req
             this.dttmpckrDate.Size = new System.Drawing.Size(125, 27);
             this.dttmpckrDate.TabIndex = 12;
             this.dttmpckrDate.Value = new System.DateTime(2021, 6, 3, 0, 0, 0, 0);
-            this.dttmpckrDate.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // txtbxSex
             // 
@@ -219,7 +217,6 @@ namespace Contact_Tracing_Req
             this.lblTimeI.TabIndex = 17;
             this.lblTimeI.Text = "Time In";
             this.lblTimeI.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lblTimeI.Click += new System.EventHandler(this.lblTimeI_Click);
             // 
             // lblTimeO
             // 
@@ -230,7 +227,6 @@ namespace Contact_Tracing_Req
             this.lblTimeO.TabIndex = 18;
             this.lblTimeO.Text = "Time Out";
             this.lblTimeO.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lblTimeO.Click += new System.EventHandler(this.lblTimeO_Click);
             // 
             // dttmpckrTimeI
             // 
