@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Contact Tracing Form Reader Req/1.0.0": {
+        "runtime": {
+          "Contact Tracing Form Reader Req.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Contact Tracing Form Reader Req/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

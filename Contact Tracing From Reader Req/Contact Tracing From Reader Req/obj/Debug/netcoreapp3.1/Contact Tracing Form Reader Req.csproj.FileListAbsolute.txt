@@ -1,0 +1,16 @@
+C:\Users\ACER\source\repos\Contact Tracing From Reader Req\Contact Tracing From Reader Req\bin\Debug\netcoreapp3.1\Contact Tracing Form Reader Req.exe
+C:\Users\ACER\source\repos\Contact Tracing From Reader Req\Contact Tracing From Reader Req\bin\Debug\netcoreapp3.1\Contact Tracing Form Reader Req.deps.json
+C:\Users\ACER\source\repos\Contact Tracing From Reader Req\Contact Tracing From Reader Req\bin\Debug\netcoreapp3.1\Contact Tracing Form Reader Req.runtimeconfig.json
+C:\Users\ACER\source\repos\Contact Tracing From Reader Req\Contact Tracing From Reader Req\bin\Debug\netcoreapp3.1\Contact Tracing Form Reader Req.runtimeconfig.dev.json
+C:\Users\ACER\source\repos\Contact Tracing From Reader Req\Contact Tracing From Reader Req\bin\Debug\netcoreapp3.1\Contact Tracing Form Reader Req.dll
+C:\Users\ACER\source\repos\Contact Tracing From Reader Req\Contact Tracing From Reader Req\bin\Debug\netcoreapp3.1\Contact Tracing Form Reader Req.pdb
+C:\Users\ACER\source\repos\Contact Tracing From Reader Req\Contact Tracing From Reader Req\obj\Debug\netcoreapp3.1\Contact Tracing Form Reader Req.csproj.AssemblyReference.cache
+C:\Users\ACER\source\repos\Contact Tracing From Reader Req\Contact Tracing From Reader Req\obj\Debug\netcoreapp3.1\Contact_Tracing_From_Reader_Req.cntcttrcfrmReader.resources
+C:\Users\ACER\source\repos\Contact Tracing From Reader Req\Contact Tracing From Reader Req\obj\Debug\netcoreapp3.1\Contact Tracing Form Reader Req.csproj.GenerateResource.cache
+C:\Users\ACER\source\repos\Contact Tracing From Reader Req\Contact Tracing From Reader Req\obj\Debug\netcoreapp3.1\Contact Tracing Form Reader Req.AssemblyInfoInputs.cache
+C:\Users\ACER\source\repos\Contact Tracing From Reader Req\Contact Tracing From Reader Req\obj\Debug\netcoreapp3.1\Contact Tracing Form Reader Req.AssemblyInfo.cs
+C:\Users\ACER\source\repos\Contact Tracing From Reader Req\Contact Tracing From Reader Req\obj\Debug\netcoreapp3.1\Contact Tracing Form Reader Req.csproj.CoreCompileInputs.cache
+C:\Users\ACER\source\repos\Contact Tracing From Reader Req\Contact Tracing From Reader Req\obj\Debug\netcoreapp3.1\Contact Tracing Form Reader Req.dll
+C:\Users\ACER\source\repos\Contact Tracing From Reader Req\Contact Tracing From Reader Req\obj\Debug\netcoreapp3.1\Contact Tracing Form Reader Req.pdb
+C:\Users\ACER\source\repos\Contact Tracing From Reader Req\Contact Tracing From Reader Req\obj\Debug\netcoreapp3.1\Contact Tracing Form Reader Req.genruntimeconfig.cache
+C:\Users\ACER\source\repos\Contact Tracing From Reader Req\Contact Tracing From Reader Req\obj\Debug\netcoreapp3.1\Contact Tracing Form Reader Req.GeneratedMSBuildEditorConfig.editorconfig
